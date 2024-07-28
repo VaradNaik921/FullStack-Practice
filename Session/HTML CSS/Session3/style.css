@@ -1,0 +1,18 @@
+/*Class Selector*/
+.A{
+    background-color:rgb(255, 0, 0);
+    color: aliceblue;
+}   
+/*ID Selector*/
+#B{
+    background-color:rgb(0, 38, 255);
+    color: antiquewhite;
+}
+#C{
+    background-color:rgb(26, 255, 0);
+    color: black
+    ;
+}
+.A,#B,#C{
+    text-align:center;
+}

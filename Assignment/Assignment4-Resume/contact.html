@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>Contact:Varad Naik</title>
+        <style>
+            body {
+                background-image: url(contact_hero.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 21cm;
+                height: 29.7cm;
+                margin: 10 auto;
+                color: azure;
+            }
+            nav{
+                display: flexbox;
+                justify-content: center;
+            }
+            .navbar {
+                margin-left:3px;
+            }
+            nav a{
+                background-color: black;
+                width: 100%;
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                padding: 5px 95px;
+            }
+            nav a:hover{
+                color: orange;
+                padding: 10px 95px;
+            }
+            h1{
+                text-align: center;
+                background-color: darkgrey;
+                height: 50px;
+                text-decoration: underline;
+                color: black;
+                font-family: 'Times New Roman';
+                line-height: 50px;
+            }
+            form{
+                padding:5px;
+            }
+            .t{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #z{
+                text-align: center;
+            }
+            .submit{
+                font-weight: bolder;
+                background-color:darkslategrey;
+                color: white;
+                border:none;
+                height: 36px;
+                width: 105px;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="gallery.html">GALLERY</a>
+            </nav>
+        </div>
+        <hr>
+        <div><h1>CONTACT ME</h1><hr></div>
+        <form>
+            <div>
+                <table class="t" width="80%">
+                    <tr>
+                        <td>
+                            <label for="fname">Full Name:</label>
+                        </td>
+                        <td>
+                            <input name="fname" size="50" type="text" placeholder="Full Name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-mail:</label>
+                        </td>
+                        <td>
+                            <input name="mail" size="50" type="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone No.:</label>
+                        </td>
+                        <td>
+                            <input name="phone" size="50" type="number" placeholder="Phone No."/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <label for="moc">Preferred Method of Contact:</label>
+                        </td>
+                        <td>
+                            <select name="moc" width="1000px">
+                                <option value="0">Select Method</option>
+                                <option value="1">E-mail</option>
+                                <option value="2">Message</option>
+                                <option value="3">Any Other(add in comments)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="DOB">Date of Birth:</label>
+                        </td>
+                        <td>
+                            <input name="DOB" size="50" type="date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gen">Gender:</label>
+                        </td>
+                        <td>
+                            <input name="gen" id="r1" type="radio"/><label for="r1">Male</label>
+                            <input name="gen" id="r2" type="radio"/><label for="r2">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="com">Comments:</label>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="47" placeholder="Any Comments"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Attach Documents:</label>
+                        </td>
+                        <td>
+                            <input type="file"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td width="33%"></td>
+                    <td id="z" width="33%"><button class="submit">SUBMIT</button></td>
+                    <td width="33%"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

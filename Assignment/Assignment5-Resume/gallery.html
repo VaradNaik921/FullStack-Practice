@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery:Varad Naik</title>
+        <style>
+            body {
+                background-image: url(gallery_hero.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 21cm;
+                height: 29.7cm;
+                margin: 10 auto;
+                position: relative;
+            }
+            .B{
+                text-decoration: none;
+                color:white;
+            }
+            nav{
+                display: flexbox;
+                justify-content: center;
+            }
+            .navbar {
+                position: sticky;
+                top:10;
+                z-index: 1000;
+                margin-left:auto;
+                margin-right: auto;
+                max-width: fit-content;
+            }
+            nav a{
+                background-color: black;
+                width: 100%;
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                padding: 5px 95px;
+            }
+            nav a:hover{
+                transition: 1s;
+                color: orange;
+                padding: 10px 95px;
+            }
+            h1{
+                color: floralwhite;
+                background-color: darkviolet;
+                text-align: center;
+                border: 5px solid darkblue;
+                font-size: 35px;
+                font-family: cursive;
+            }
+            .home{
+                position: fixed;
+                bottom:25px;
+                right:25px;
+            }
+            .hom a{
+                border: 1px solid black;
+                background-color: purple;
+                color: pink;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #ho{
+                display: none;
+                color: white;
+            }
+            .hom:hover + #ho{
+                display: inline-block;
+                transition: 1s;
+            }
+            .hom a:hover{
+                transition: 1s;
+                width:100px;
+                border-radius:25px;
+            }
+            .hom svg{
+                width:35px;
+                height:35px;
+            }
+            .contact{
+                position: fixed;
+                bottom:100px;
+                right:25px;
+            }
+            .con a{
+                border: 1px solid black;
+                background-color: purple;
+                color: pink;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #co{
+                display: none;
+                color: white;
+            }
+            .con:hover + #co{
+                display: inline-block;
+                transition: 1s;
+            }
+            .con a:hover{
+                transition: 1s;
+                width:100px;
+                border-radius:25px;
+            }
+            .con svg{
+                width:35px;
+                height:35px;
+            }
+            @media screen and (max-width:599px){
+                body {
+                    background-attachment: fixed;
+                }
+                .navbar a:nth-child(3) {
+                    display: none;
+                }
+                nav a{
+                    padding: 5px 140px;
+                }
+                nav a:hover{
+                    transition: 1s;
+                    color: orange;
+                    padding: 10px 140px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="gallery.html">GALLERY</a>
+            </nav>
+        </div>
+        <hr>
+        <h1>Gallery</h1>
+        <table width="100%">
+            <tr>
+                <td rowspan="2" width="60%"><img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" width="470"></td>
+                <td width="40%"><img src="https://s1.1zoom.me/prev/427/426720.jpg" width="313"></td>
+            </tr>
+            <tr>
+                <td width="40%"><img src="https://studio.pinotspalette.com/briercreek/images/ai-art-1024x683.jpg" width="313" height="155"></td>
+            </tr>
+        </table>
+        <table width="100%">
+            <tr>
+                <td width="25%" rowspan="2"><img src="gallery1.jpeg" width="300" height="450"></td>
+                <td width="37.5%"><img src="gallery2.jpeg" width="235" height="220"></td>
+                <td width="37.5%"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDaf79c4ChWnhjX38QYp5tawBfVhxeoiQj2w&usqp=CAU" width="240" height="220"></td>
+            </tr>
+            <tr>
+                <td colspan="2" width="75%"><iframe width="480" height="220" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=tdkvcxYq6rZTFnwW" allowfullscreen></iframe></td>
+            </tr>
+        </table>
+        <section class="home">
+            <div class="hom">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg></a>
+            </div>
+            <div id="ho">
+                Home
+            </div>
+        </section>
+        <section class="contact">
+            <div class="con">
+                <a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                </svg></a>
+            </div>
+            <div id="co">
+                Contact Me!
+            </div>
+        </section>
+
+    </body>
+</html>

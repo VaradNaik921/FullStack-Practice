@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello World");
+    </script>
+    <script src="jsdemo.js"></script>
+    <ul>
+        <li>use either internal java script using script tag/ for external file use .js file</li>
+        <li>follows order of how script tag is used in html</li>
+        <li>console.log:used for printing</li>
+        <li>variable declaration: similar to java, but only using either var or no type, eg. var name="hi";/ var number=10;</li>
+        <li>other variable type include: let and const, where const doesnt change typing once initialized, whereas let allows reasigning but no redeclaration where as in var redecleration is also allowed</li>
+        <li>scoping: let and const are block scope type where they only work in the nearest curly bracket, whereas var is global and it can used throughout</li>
+        <li>data types in js: It consists of 7 primitive data types:number (int,float,double), string, boolean, null(datatype and also value), undefined(datatype also value), 
+            Referenced datatype:Object, array, function
+        </li>
+    </ul>
+    <script>
+        var number=10;
+        console.log(number);
+        console.log(typeof number);
+        number= true;
+        console.log(number);
+        console.log(typeof number);
+    </script>
+</body>
+</html>

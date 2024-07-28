@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Stat</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: sans-serif;
+            background-color: #F2EDED;
+            color: #111827;
+        }
+        .container{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+        }
+        .cont{
+            width: 90%;
+            max-width: 1216px;
+            height: 384px;
+            gap: 20px;
+            background-color: #F2EDED;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .p{
+            width: 344px;
+            height: 24px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            color: #111827;
+            margin-bottom: 20px;
+        }
+        .con{
+            display: flex;
+            flex-direction: column;
+            height: 340px;
+            gap: 20px;
+        }
+        .card{
+            height: 100px;
+            width: 100%;
+            padding: 20px 16px;
+            gap: 4px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            box-sizing: border-box;
+        }
+        .txt{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            color:#6B7280;
+        }
+        .stat{
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 36px;
+            text-align: left;
+            color:#111827;
+        }
+        @media only screen and (min-width: 600px) {
+            .container{
+                width: 100%;
+            }
+            .cont{
+                width: 90%;
+                max-width: 1216px;
+            }
+            .con{
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+            }
+            .card{
+                width: 30%;
+                max-width: 392px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <a href="grid.html">Grid</a>
+    <a href="banner.html">Banner</a>
+    <a href="card.html">Cards</a>
+    <a href="cardstat.html">Card Stat</a>
+    <hr>
+    <div class="container">
+        <div class="cont">
+            <div class="p">Last 30 Days</div>
+            <div class="con">
+                <div class="card">
+                    <div class="txt">Total Subscribers</div>
+                    <div class="stat">71,897</div>
+                </div>
+                <div class="card">
+                    <div class="txt">Avg. Open Rate</div>
+                    <div class="stat">58.16%</div>
+                </div>
+                <div class="card">
+                    <div class="txt">Avg. Click Rate</div>
+                    <div class="stat">24.57%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Invoice</title>
+        <style>
+            body{
+                max-width:65%;
+                margin: auto;
+                background: white;
+            }
+            .A{
+                font-size: 25px; 
+                font-weight: bolder;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .B{
+                font-size: 20px; 
+                font-weight: bolder;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .D{
+                background-color: rgb(60, 59, 59); 
+                color:rgb(255, 255, 255);
+            }
+            .z{
+                text-align: right;
+            }
+            th, td{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <table width="100%">
+            <tr>
+                <td colspan="3"><p class="A">Invoice To:</p></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><p><b class="A">Mr. Jhon Doe</b><br>14 Dummy Street Area, Location<br>Lorem Ipsum, 120xx15xx</p></td>
+                <td width="10%"><b class="B">Invoice#:</b></td>
+                <td class="z" width="10%">205092</td>
+            </tr>
+            <tr>
+                <td width=10%><b class="B">Date:</b></td>
+                <td class="z" width="10%">12/12/1212</td>
+            </tr>
+        </table>
+        <hr> 
+        <table border="1" width="100%">
+            <tr class="D"  height="30px">
+                <th width="5%">No.</th>
+                <th width="50%">Item Description</th>
+                <th width="10%">Qty</th>
+                <th width="17.5%">Price($)</th>
+                <th width="17.5%">Total($)</th>
+            </tr>
+            <tr height="20px"><td>1</td><td>Item 1</td><td>5</td><td>5</td><td>25</td></tr>
+            <tr height="20px"><td>2</td><td>Item 2</td><td>2</td><td>15</td><td>30</td></tr>
+            <tr height="20px"><td>3</td><td>Item 3</td><td>8</td><td>5</td><td>40</td></tr>
+            <tr height="20px"><td>4</td><td>Item 4</td><td>10</td><td>9.99</td><td>99.9</td></tr>
+            <tr height="20px"><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr height="20px"><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr height="20px"><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr height="20px"><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr height="20px"><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr height="20px"><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr>
+                <td rowspan="3" colspan="3">Payment Info:<br>Account#:1234-5678-9012<br>A/C Name:Lorem Ipsum<br>Bank Details: Details of Bank</td>
+                <td class="D">Sub Total</td><td>194.9</td>
+            </tr>
+            <tr>
+                <td class="D">Tax</td><td>9.745</td>
+            </tr>
+            <tr>
+                <td class="D">Total</td><td>984.245</td>
+            </tr>
+        </table>
+        <hr>
+        <table width="100%" border="1" height="50px">
+            <tr>
+                <div>Terms & Conditions</div>
+            </tr>
+        </table><hr>
+    </body>
+</html>

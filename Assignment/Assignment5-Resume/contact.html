@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact:Varad Naik</title>
+        <style>
+            body {
+                background-image: url(contact_hero.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 21cm;
+                height: 29.7cm;
+                margin: 10 auto;
+                color: azure;
+                position: relative;
+            }
+            nav{
+                display: flexbox;
+                justify-content: center;
+            }
+            .navbar {
+                position: sticky;
+                top:10;
+                z-index: 1000;
+                margin-left:auto;
+                margin-right: auto;
+                max-width: fit-content;
+            }
+            nav a{
+                background-color: black;
+                width: 100%;
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                padding: 5px 95px;
+            }
+            nav a:hover{
+                transition: 1s;
+                color: orange;
+                padding: 10px 95px;
+            }
+            h1{
+                text-align: center;
+                background-color: darkgrey;
+                height: 50px;
+                text-decoration: underline;
+                color: black;
+                font-family: 'Times New Roman';
+                line-height: 50px;
+            }
+            form{
+                padding:5px;
+            }
+            .t{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #z{
+                text-align: center;
+            }
+            .submit{
+                font-weight: bolder;
+                background-color:darkslategrey;
+                color: white;
+                border:none;
+                height: 36px;
+                width: 105px;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+            .home{
+                position: fixed;
+                bottom:25px;
+                right:25px;
+            }
+            .hom a{
+                border: 1px solid black;
+                background-color: gold;
+                color: black;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #ho{
+                display: none;
+                color: gold;
+            }
+            .hom:hover + #ho{
+                display: inline-block;
+                transition: 1s;
+            }
+            .hom a:hover{
+                transition: 1s;
+                width:100px;
+                border-radius:25px;
+            }
+            .hom svg{
+                width:35px;
+                height:35px;
+            }
+            .gallery{
+                position: fixed;
+                bottom:100px;
+                right:25px;
+            }
+            .gal a{
+                border: 1px solid black;
+                background-color: gold;
+                color: black;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #ga{
+                display: none;
+                color: gold;
+            }
+            .gal:hover + #ga{
+                display: inline-block;
+                transition: 1s;
+            }
+            .gal a:hover{
+                transition: 1s;
+                width:100px;
+                border-radius:25px;
+            }
+            .gal svg{
+                width:30px;
+                height:30px;
+            }
+            @media screen and (max-width:599px){
+                body {
+                    background-attachment: fixed;
+                }
+                .navbar a:nth-child(2) {
+                    display: none;
+                }
+                nav a{
+                    padding: 5px 140px;
+                }
+                nav a:hover{
+                    transition: 1s;
+                    color: orange;
+                    padding: 10px 140px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="gallery.html">GALLERY</a>
+            </nav>
+        </div>
+        <hr>
+        <div><h1>CONTACT ME</h1><hr></div>
+        <form>
+            <div>
+                <table class="t" width="80%">
+                    <tr>
+                        <td>
+                            <label for="fname">Full Name:</label>
+                        </td>
+                        <td>
+                            <input name="fname" size="50" type="text" placeholder="Full Name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-mail:</label>
+                        </td>
+                        <td>
+                            <input name="mail" size="50" type="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone No.:</label>
+                        </td>
+                        <td>
+                            <input name="phone" size="50" type="number" placeholder="Phone No."/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <label for="moc">Preferred Method of Contact:</label>
+                        </td>
+                        <td>
+                            <select name="moc" width="1000px">
+                                <option value="0">Select Method</option>
+                                <option value="1">E-mail</option>
+                                <option value="2">Message</option>
+                                <option value="3">Any Other(add in comments)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="DOB">Date of Birth:</label>
+                        </td>
+                        <td>
+                            <input name="DOB" size="50" type="date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gen">Gender:</label>
+                        </td>
+                        <td>
+                            <input name="gen" id="r1" type="radio"/><label for="r1">Male</label>
+                            <input name="gen" id="r2" type="radio"/><label for="r2">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="com">Comments:</label>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="47" placeholder="Any Comments"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Attach Documents:</label>
+                        </td>
+                        <td>
+                            <input type="file"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td width="33%"></td>
+                    <td id="z" width="33%"><button class="submit">SUBMIT</button></td>
+                    <td width="33%"></td>
+                </tr>
+            </table>
+        </form>
+        <section class="home">
+            <div class="hom">
+                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg></a>
+            </div>
+            <div id="ho">
+                Home
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="gal">
+                <a href="gallery.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg></a>
+            </div>
+            <div id="ga">
+                Gallery
+            </div>
+        </section>
+    </body>
+</html>

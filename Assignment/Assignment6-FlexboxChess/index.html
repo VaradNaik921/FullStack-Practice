@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Chess-Varad</title>
+    <style>
+        body{
+            background-color: black;
+            color: azure;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .board{
+            width: 600px;
+            height: 600px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .corner{
+            width: 20px;
+            height: 20px;
+            background-color: darkblue;
+        }
+        .border1{
+            width: 70px;
+            height: 20px;
+            background-color: darkblue;
+            color: aliceblue;
+            display: flex;
+            justify-content:end;
+        }
+        .border2{
+            width: 20px;
+            height: 70px;
+            background-color: darkblue;
+            color: aliceblue;
+            display: flex;
+            justify-content:end;
+        }
+        .light{
+            width: 70px;
+            height: 70px;
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dark{
+            width: 70px;
+            height: 70px;
+            background-color: royalblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            color: white;
+        }
+        @media only screen and (max-width:599px){
+            .board{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            .corner{
+                width: 10px;
+                height: 10px;
+                background-color: darkgreen;
+            }
+            .border1{
+                width: 35px;
+                height: 10px;
+                background-color: darkgreen;
+                color: aliceblue;
+                display: flex;
+                justify-content:end;
+                font-size: 10px;
+            }
+            .border2{
+                width: 10px;
+                height: 35px;
+                background-color: darkgreen;
+                color: aliceblue;
+                display: flex;
+                justify-content:end;
+                font-size: 10px;
+            }
+            .light{
+                width: 35px;
+                height: 35px;
+                background-color: beige;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .dark{
+                width: 35px;
+                height: 35px;
+                background-color: green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Chess</h1>
+    <div class="board">
+        <div class="corner"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="border1"></div>
+        <div class="corner"></div>
+        <div class="border2">8</div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg" alt="Chess rdt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt45.svg" alt="Chess ndt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg" alt="Chess bdt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Chess_qdt45.svg" alt="Chess qdt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Chess_kdt45.svg" alt="kdt" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg" alt="Chess bdt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt45.svg" alt="Chess ndt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg" alt="Chess rdt45.svg" height="60" width="60"></div>
+        <div class="border2"></div>
+        <div class="border2">7</div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg" alt="Chess pdt45.svg" height="60" width="60"></div>
+        <div class="border2"></div>
+        <div class="border2">6</div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="border2"></div>
+        <div class="border2">5</div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="border2"></div>
+        <div class="border2">4</div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="border2"></div>
+        <div class="border2">3</div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="dark"></div>
+        <div class="light"></div>
+        <div class="border2"></div>
+        <div class="border2">2</div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg" alt="Chess plt45.svg" height="60" width="60"></div>
+        <div class="border2"></div>
+        <div class="border2">1</div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg" alt="Chess rlt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg" alt="Chess nlt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg" alt="Chess blt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt45.svg" alt="Chess qlt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_klt45.svg" alt="Chess klt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg" alt="Chess blt45.svg" height="60" width="60"></div>
+        <div class="dark"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg" alt="Chess nlt45.svg" height="60" width="60"></div>
+        <div class="light"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg" alt="Chess rlt45.svg" height="60" width="60"></div>
+        <div class="border2"></div>
+        <div class="corner"></div>
+        <div class="border1">a</div>
+        <div class="border1">b</div>
+        <div class="border1">c</div>
+        <div class="border1">d</div>
+        <div class="border1">e</div>
+        <div class="border1">f</div>
+        <div class="border1">g</div>
+        <div class="border1">h</div>
+        <div class="corner"></div>
+    </div>
+    Flexbox Chess by Varad Naik
+    <div>Icon Credits:<a href="https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces" target="_blank">By Cburnett - Own work, CC BY-SA 3.0</a></div>
+</body>
+</html>

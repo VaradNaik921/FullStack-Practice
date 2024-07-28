@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            background-color: yellow;
+            height:100px;
+            flex-flow: column wrap-reverse;
+            justify-content:space-evenly;
+        }
+        #a{
+            background-color: red;
+            width:100px;
+            height:25px;
+        }
+        #b{
+            background-color: blue;
+            width:100px;
+            height:25px;
+        }
+        #c{
+            background-color: purple;
+            width:100px;
+            height:25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PARENT PROPERTIES</h1>
+    <div id="property">
+        <ul></ul>Properties of Parent Flex:
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>align-content</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        Direction in Flex:
+        Row, Column, Row Reverse, Column Reverse
+        <br>Property:flex-direction
+        <br>Default value:Row
+    </div>
+    <br>
+    <div>
+        Wrap in Flex:
+        nowrap, wrap, wrap reverse
+        <br>Property:flex-wrap
+        <br>Default value:nowrap
+    </div>
+    <br>
+    <div>
+        Flow in Flex:
+        flex-direction and flex-wrap can be used singlehandedly using flex-flow
+        <br>Property:flex-flow
+        <br>Default value:row nowrap
+    </div>
+    <br>
+    <div>
+        Justify-Content:
+        used for alignment in main axis
+        <br>Property:justify-content
+        <br>Default value:flex-start
+        <br>space-around: margin applied equally on sides of box, space between:space added between the boxes only, space-evenly: equal space added around everywhere
+    </div>
+    <br>
+    <div>
+        Align-Items:
+        used for alignment in cross axis(perpendicular to main axis)
+        <br>Property:align-items
+        <br>Default value:flex-start
+        <br>
+    </div>
+    <div class="parent">
+        <div id="a">Child</div>
+        <div id="b">Child</div>
+        <div id="c">Child</div>
+    </div>
+</body>
+</html>

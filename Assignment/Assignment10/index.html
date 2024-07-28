@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(244, 244, 244);
+        }
+        #con {
+            background-color: white;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #333;
+            padding-bottom: 25px;
+        }
+        .op {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            box-shadow: 0 -8px 10px -5px rgb(0, 86, 179);
+        }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .button-group:last-child{
+            margin-bottom: 50px;
+        }
+        button {
+            width: 150px;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 8px;
+            border: 1px solid rgb(0, 86, 179);
+            background-color: rgb(0, 123, 255);
+            color: white;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: rgb(0, 86, 179);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script src="bank.js"></script>
+    <div id="con">
+        <h1>Welcome to Bank of Bank</h1>
+        <div class="op">
+            <h2>UPI Services</h2>
+            <div class="button-group">
+                <button onclick="showbal()">Show Balance</button>
+                <button onclick="witmon()">Withdraw Money</button>
+                <button onclick="depmon()">Deposit Money</button>
+            </div>
+        </div>
+        <div class="op">
+            <h2>Credit Card Services</h2>
+            <div class="button-group">
+                <button onclick="ccbal()">Credit Card Balance</button>
+                <button onclick="ccbuy()">Buy</button>
+                <button onclick="ccpay()">Pay Bill</button>
+                <button onclick="cclim()">Check Limit</button>
+            </div>
+        </div>
+        <!-- <div class="op">
+            <h2>Digital Passbook</h2>
+            <button onclick="pass()">Digital Passbook</button>
+        </div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance tracker</title>
+</head>
+<body>
+    <script>
+        let msg = alert('Welcome to online bank');
+        let op;
+        let bal=0;
+        let dep;
+        let wit;
+        let loop= true;
+        while(loop){
+            op = prompt('What can we do to help: a)Show Balance, b)Deposit Money, c)Withdraw Money, d)Stop');
+            switch(op){
+                case op='a':
+                    msg = alert(`Your current balance is ${bal}`);
+                break;
+                case op='b':
+                    dep = parseInt(prompt('Enter the amount to Deposit'));
+                    bal+=dep;
+                    msg = alert(`${dep} Amount Deposited in account`);
+                break;
+                case op='c':
+                    wit = parseInt(prompt('Enter the amount to Withdraw'));
+                    if(wit<bal){
+                        bal-=wit;
+                        msg = alert(`${wit} Amount Withdrawn from account`);
+                    }
+                    else{
+                        msg = alert('Insufficient Balance, pls try again')
+                    }
+                break;
+                case op='d':
+                    msg = alert('Thanks for using our services');
+                    loop=false;
+                break;
+                default:
+                    msg = alert('Enter Correct Operation');
+            }
+        }
+    </script>
+    <a href="index.html">Index</a><br>
+    <a href="calc.html">Calculator</a>
+</body>
+</html>

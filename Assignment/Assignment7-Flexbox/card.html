@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #F9FAFB;
+            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 16px;
+        }
+        div {
+            margin: 5px;
+        }
+        #a {
+            color: #111827;
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 36px;
+        }
+        #p{
+            color: #6B7280;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 344px;
+            gap: 10px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px -2px #0000000D, 0px 10px 15px -3px #0000001A;
+            padding: 16px;
+        }
+        .card {
+            width: 100%;
+            flex-grow: 1;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        #b {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 48px;
+            color: #4F46E5;
+        }
+        #c{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #6B7280;
+        }
+        @media only screen and (min-width: 600px) {
+            #a {   
+                width: 100%;
+                max-width: 896px;
+                font-size: 36px;
+                font-weight: 800;
+                line-height: 40px;
+                margin-bottom: 16px;
+            }
+            #p {
+                width: 100%;
+                max-width: 896px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 28px;
+                margin-bottom: 30px;
+            }
+            .cards {
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                max-width: 896px;
+                gap: 10px;
+                padding: 16px;
+            }
+            .card {
+                width: 100%;
+                max-width: 298.67px;
+                height: auto;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <a href="grid.html">Grid</a>
+    <a href="banner.html">Banner</a>
+    <a href="card.html">Cards</a>
+    <a href="cardstat.html">Card Stat</a>
+    <div class="container">
+        <div id="a">Trusted by developers from over 80 planets</div>
+        <div id="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.</div>
+        <div class="cards">
+            <div class="card"><span id="b">100%</span><br><span id="c">Pepperoni</span></div>
+            <div class="card"><span id="b">24/7</span><br><span id="c">Delivery</span></div>
+            <div class="card"><span id="b">100k</span><br><span id="c">Calories</span></div>
+        </div>
+    </div>
+</body>
+</html>

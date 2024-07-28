@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="nav-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+            </svg>  
+            <h1>Cube</h1>
+            <input id="search" type="text" placeholder="Search" class="hidden">
+            <div id="profile-icon" class="hidden"></div>
+            <div id="profile-menu" class="dropdown hidden">
+                <button id="profile-button">Profile</button>
+                <button id="settings-button">Settings</button>
+                <button id="archived-posts-button">Archived Posts</button>
+                <button id="logout-button">Logout</button>
+            </div>
+        </nav>
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <input type="email" id="email-input" placeholder="Email Address (Admin@social)" required>
+            <input type="password" id="password-input" placeholder="Password (password123)" required>
+            <div id="error-message" class="error-message hidden">Invalid email or password</div>
+            <label><a href="#">Forgot Password?</a></label>
+            <button id="login-button">Login</button>
+            <label>Create an Account? <a href="#">Sign Up</a></label>
+        </div>
+        <div id="main-content" class="hidden">
+            <div id="sidebar">
+                <h3>Home</h3>
+                <h3>Popular</h3>
+                <h3>All</h3>
+                <hr>
+                <div id="profile-details" class="hidden">
+                    <div id="profile-picture"></div>
+                    <div id="user-info">
+                        <div id="username">User Name</div>
+                        <div id="user-email">user@example.com</div>
+                        <div id="user-follow-stats">
+                            <span id="followers-count">Followers 151</span>
+                            <span id="following-count">Following 100</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div id="content-wrapper">
+                <div id="welcome-message" class="welcome-message"></div>
+                <div id="posts-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="social.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #4B5563;
+            margin: 25px;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color:#9CA3AF;
+            background-color: #F9FAFB;
+            flex-basis: 48%;
+            height: 100px;
+            margin: 2.5px;
+        }
+        @media only screen and (min-width: 600px) {
+            .box {
+                flex-basis: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Index</a>
+    <a href="grid.html">Grid</a>
+    <a href="banner.html">Banner</a>
+    <a href="card.html">Cards</a>
+    <a href="cardstat.html">Card Stat</a>
+    <div class="container">
+        <div class="title">TRUSTED BY OVER 5 VERY AVERAGE SMALL BUSINESSES</div>
+        <div class="grid">
+            <div class="box"><img width="100%" height="99%" src="grid/t.png" alt="T"></div>
+            <div class="box"><img width="100%" height="99%" src="grid/m.png" alt="M"></div>
+            <div class="box"><img width="100%" height="99%" src="grid/sk.png" alt="SK"></div>
+            <div class="box"><img width="100%" height="99%" src="grid/tu.png" alt="TU"></div>
+            <div class="box"><img width="100%" height="99%" src="grid/l.png" alt="L"></div>
+            <div class="box"><img width="100%" height="99%" src="grid/st.png" alt="ST"></div>
+        </div>
+    </div>
+</body>
+</html>

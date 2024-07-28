@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIxpuuKEoUKAf651P-MvFUyw_-XYfF0yCWRA&s);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 21cm;
+            height: 29.7cm;
+            margin: 10 auto;
+            font-family: sans-serif;
+            position: relative;
+        }
+        h1 {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+        .block {
+            position: relative;
+            width: 200px;
+            padding: 10px 0px;
+            background-color: white;
+            border: 2px solid #333;
+            margin: 10px;
+            text-align: center;
+            line-height: 50px;
+            transition: background-color 1s, transform 1s linear;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bolder;
+            transition: color 0.3s;
+        }
+        .ball {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: royalblue;
+            border-radius: 50%;
+        }
+        .block:hover {
+            background-color: orange;
+            transform: translateY(-5px) translateX(-5px);
+        } 
+        .block:hover .ball {
+            animation: animate 3s infinite;
+        }
+        a:hover {
+            color: white;
+        }
+        @keyframes animate {
+            0% {
+                transform: translateY(0);
+                background-color: blue;
+            }
+            25% {
+                transform: translateY(-70px);
+                background-color: indigo;
+            }
+            50% {
+                transform: translateY(-70px) translateX(180px);
+                background-color: violet;
+            }
+            75% {
+                transform: translateY(0px) translateX(180px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @media only screen and (max-width: 21cm){
+            body {
+                background-attachment: fixed;
+                width: auto;
+                margin: 0;
+            }
+            .container{
+                flex-direction: column;
+                height: 350px;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 7</h1>
+    <div class="container">
+        <div class="block">
+            <a href="grid.html">A. Grid</a>
+            <div class="ball"></div>
+        </div>
+        <div class="block">
+            <a href="banner.html">B. Banner</a>
+            <div class="ball"></div>
+        </div>
+        <div class="block">
+            <a href="card.html">C. Cards</a>
+            <div class="ball"></div>
+        </div><div class="block">
+            <a href="cardstat.html">D. Card Stat</a>
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>

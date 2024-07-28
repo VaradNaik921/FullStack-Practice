@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Welcome to Bank of Bank</h1></header>
+    <div id="con">
+        <div id="left">
+            <h2>UPI Services</h2>
+            <button id="show-balance">Show Balance</button>
+            <div class="transaction-input">
+                <input type="number" id="withdraw-amount" placeholder="Enter amount to withdraw">
+                <button id="withdraw">Withdraw Money</button>
+            </div>
+            <div class="transaction-input">
+                <input type="number" id="deposit-amount" placeholder="Enter amount to deposit">
+                <button id="deposit">Deposit Money</button>
+            </div>
+            <h2>Credit Card Services</h2>
+            <button id="cc-balance">Credit Card Balance</button>
+            <button id="bill-due">Bill Due</button>
+            <div class="transaction-input">
+                <input type="number" id="buy-amount" placeholder="Enter cost of item">
+                <button id="buy">Buy</button>
+            </div>
+            <div class="transaction-input">
+                <input type="number" id="pay-amount" placeholder="Enter amount to pay">
+                <button id="pay-bill">Pay Bill</button>
+            </div>
+            <button id="check-limit">Check Limit</button>
+        </div>
+        <div id="right">
+            <div id="transactions">
+                <h2>Latest Transactions</h2>
+                <table id="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button class="tran-button" id="print-transactions">Print All Transactions</button>
+            </div>
+            <div id="status">
+                <h2>Status</h2>
+                <div id="status-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>

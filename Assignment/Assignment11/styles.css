@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    background-color: rgb(0, 123, 255);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+header h1{
+    color: white;
+}
+#con {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: visible;
+}
+#left, #right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#right {
+    flex-direction: column-reverse;
+}
+#status {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+}
+#status-content {
+    font-size: 18px;
+    font-weight: bold;
+}
+#status-content.success {
+    color: green;
+}
+#status-content.error {
+    color: red;
+}
+#status-content.info {
+    color: blue;
+}
+#transactions {
+    flex: 3;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 86, 179);
+    background-color: rgb(0, 123, 255);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: rgb(0, 86, 179);
+    cursor: pointer;
+}
+.tran-button {
+    margin-top: 20px;
+}
+.transaction-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.transaction-input input {
+    height: 28px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 86, 179);
+}
+#transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#transactions-table th, #transactions-table td {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+}
+#transactions-table th {
+    background-color: coral;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    #con {
+        flex-direction: row;
+    }
+    #left {
+        width: 30%;
+    }
+    #right {
+        width: 70%;
+        padding-left: 20px;
+    }
+    #status {
+        position: relative;
+    }
+    .transaction-input {
+        flex-direction: row;
+        height: 50px;
+        gap: 0px;
+        border-radius: 8px;
+    }
+    .transaction-input input {
+        border: 1px solid rgb(208, 213, 221);
+        border-radius: 8px 0px 0px 8px;
+        flex: 1;
+    }
+    .transaction-input button {
+        border-radius: 0px 8px 8px 0px;
+        flex: 0 0 30%;
+    }
+}

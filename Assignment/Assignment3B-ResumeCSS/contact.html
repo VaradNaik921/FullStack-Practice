@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Contact:Varad Naik</title>
+        <style>
+            body {
+                background: rgb(204,204,204); 
+                width: 21cm;
+                height: 29.7cm;
+                margin: 0 auto;
+            }
+            .B{
+                text-decoration: none;
+                color:white;
+            }
+            .submit{
+                font-weight: bolder;
+                background-color:darkslategrey;
+                color: white;
+                border:none;
+                height: 36px;
+                width: 105px;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+            .navbar{
+                background-color: black;
+                
+            }
+            h1{
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: darkgrey;
+                height: 50px;
+                text-decoration: underline;
+            }
+            .t{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #z{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table class="navbar" border="2" width="100%">
+                <tr>
+                    <th width="33%"><a class="B" href="index.html">HOME</a></th>
+                    <th width="33%"><a class="B" href="contact.html">CONTACT</a></th>
+                    <th width="33%"><a class="B" href="gallery.html">GALLERY</a></th>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div><h1>CONTACT ME</h1><hr></div>
+        <form>
+            <div>
+                <table class="t" width="80%">
+                    <tr>
+                        <td>
+                            <label for="fname">Full Name:</label>
+                        </td>
+                        <td>
+                            <input name="fname" size="50" type="text" placeholder="Full Name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail">E-mail:</label>
+                        </td>
+                        <td>
+                            <input name="mail" size="50" type="email" placeholder="Email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phone">Phone No.:</label>
+                        </td>
+                        <td>
+                            <input name="phone" size="50" type="number" placeholder="Phone No."/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <label for="moc">Preferred Method of Contact:</label>
+                        </td>
+                        <td>
+                            <select name="moc" width="1000px">
+                                <option value="0">Select Method</option>
+                                <option value="1">E-mail</option>
+                                <option value="2">Message</option>
+                                <option value="3">Any Other(add in comments)</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="DOB">Date of Birth:</label>
+                        </td>
+                        <td>
+                            <input name="DOB" size="50" type="date"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gen">Gender:</label>
+                        </td>
+                        <td>
+                            <input name="gen" id="r1" type="radio"/><label for="r1">Male</label>
+                            <input name="gen" id="r2" type="radio"/><label for="r2">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="com">Comments:</label>
+                        </td>
+                        <td>
+                            <textarea rows="5" cols="47" placeholder="Any Comments"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Attach Documents:</label>
+                        </td>
+                        <td>
+                            <input type="file"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td width="33%"></td>
+                    <td id="z" width="33%"><button class="submit">SUBMIT</button></td>
+                    <td width="33%"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

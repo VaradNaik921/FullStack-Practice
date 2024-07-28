@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+          </svg>          
+        <h1>Welcome to Bank of Bank</h1>
+        <button id="out" class="hide">Log Out</button>
+    </nav>
+    <div id="log">
+        <form id="login-form">
+            <input type="email" placeholder="Email Address(Admin@bank)" id="email" required/>
+            <input type="password" placeholder="Password(password123)" id="password" required/>
+            <div id="error-message" class="error-message hide">Invalid email or password</div>
+            <label><a href="#">Forgot Password?</a></label>
+            <button type="submit">Log In</button>
+            <label>Create an Account? <a href="#">Sign Up</a></label>
+        </form>
+    </div>
+    <div id="con" class="hide">
+        <div id="left">
+            <h2>UPI Services</h2>
+            <button id="show-balance">Show Balance</button>
+            <div class="transaction-input">
+                <input type="number" id="withdraw-amount" placeholder="Enter amount to withdraw">
+                <button id="withdraw">Withdraw Money</button>
+            </div>
+            <div class="transaction-input">
+                <input type="number" id="deposit-amount" placeholder="Enter amount to deposit">
+                <button id="deposit">Deposit Money</button>
+            </div>
+            <h2>Credit Card Services</h2>
+            <button id="cc-balance">Credit Card Balance</button>
+            <button id="bill-due">Bill Due</button>
+            <div class="transaction-input">
+                <input type="number" id="buy-amount" placeholder="Enter cost of item">
+                <button id="buy">Buy</button>
+            </div>
+            <div class="transaction-input">
+                <input type="number" id="pay-amount" placeholder="Enter amount to pay">
+                <button id="pay-bill">Pay Bill</button>
+            </div>
+            <button id="check-limit">Check Limit</button>
+        </div>
+        <div id="right">
+            <div id="transactions">
+                <h2>Latest Transactions</h2>
+                <table id="transactions-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <button class="tran-button" id="print-transactions">Print All Transactions</button>
+            </div>
+            <div id="status">
+                <h2>Status</h2>
+                <div id="status-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+    <script src="log.js"></script>
+</body>
+</html>
