@@ -1,22 +1,22 @@
-// Function to add
+//Function to add
 let add = (a, b) => {
     return a + b;
 };
 
-// Function to subtract
+//Function to subtract
 let sub = (a, b) => {
     return a - b;
 };
 
-// Function to multiply
+//Function to multiply
 let mul = (a, b) => {
     return a * b;
 };
 
-// Function to divide
+//Function to divide
 let div = (a, b) => {
     return a / b;
 };
 
-// Exporting functions to use in main
+//Exporting functions to use in main
 module.exports = { add, sub, mul, div };
