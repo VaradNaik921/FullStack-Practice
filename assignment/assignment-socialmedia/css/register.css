@@ -37,12 +37,10 @@ nav h1 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     width: 300px;
 }
-
 h1 {
     margin-bottom: 20px;
     color: #fff;
 }
-
 input {
     width: 93%;
     padding: 10px;
@@ -50,7 +48,6 @@ input {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
-
 button {
     width: 100%;
     padding: 10px;
@@ -61,20 +58,16 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #ff4400c9;
 }
-
 p {
     margin-top: 15px;
 }
-
 a {
     color: #ff4400;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
