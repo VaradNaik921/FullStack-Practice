@@ -8,5 +8,5 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     localStorage.setItem('password', newPassword);
 
     alert("Registration successful! Please login.");
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 });

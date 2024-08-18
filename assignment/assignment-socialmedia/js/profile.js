@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     logoutButton.addEventListener('click', function() {
         alert('You have been logged out.');
-        window.location.href = 'index.html';
+        window.location.href = 'login.html';
     });
     
     profileIcon.addEventListener('click', function() {
